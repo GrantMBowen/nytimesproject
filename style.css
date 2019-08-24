@@ -1,0 +1,37 @@
+.header {
+    padding: auto auto;
+    margin: 0 auto;
+    background-color: #141F5C;
+    color: white;
+    text-align: center;
+
+
+}
+
+.center {
+    margin: auto; 
+        text-align: center; 
+}
+
+.search {
+    width: 92%;
+    border: 1px;
+    border-style: solid;
+  border-color: lightgrey;
+  margin: 30px auto;
+  padding: 25px;
+  line-height: 1.5;
+  border-radius: 5px;
+}
+
+@font-face {
+    font-family: 'olde_englishregular';
+    src: url('font/oldeenglish-webfont.woff2') format('woff2'),
+         url('font/oldeenglish-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+h1 {
+    font-family: 'olde_englishregular';
+}

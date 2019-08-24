@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>NYCT Search</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    
+
+    
+  </head>
+  <body>
+    <div class="header">
+      <!--- <h1 class="center">New York Times Search</h1> -->
+      <img src="img/Logo.png">
+     
+    </div>
+
+    <div>
+      <form action="#" method="get" class="search">
+        <p>Search Term:<br>
+          <input type="text" id="searchTerm"></p>
+        
+       <p>Number of Records to Retrive:<br>
+          <input type="text" id="record"></p>
+      
+        <p>Start Year (Optional):<br>
+            <input type="text" id="startYear"></p>
+        
+        <p>End Year (Optional):<br>
+              <input type="text" id="endYear"></p><br>
+
+              <button type="button" class="btn btn-default" id="searchBtn">
+                <span class="glyphicon glyphicon-search"></span> Search
+              </button>
+              <button type="button" class="btn btn-default" id="clearBtn">Clear Result</button>     
+      </form>
+    </div>
+
+    <div>
+      <div class="search">
+      <h4>Top Articles</h4>
+
+    </div>
+
+
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+<script>
+    $("#searchBtn").on("click", function() {
+
+    
+    // console.log("#searchTerm");
+   
+
+    
+        var queryUrl =
+            "https://api.nytimes.com/svc/search/v2/articlesearch.json?api-key=R1a31F4tBjCUaM2ho8GtIFsrSdtXt30M&q=trump"
+        $.ajax({
+            url: queryUrl,
+            method: "GET"
+
+        }).then(function (response) {
+            console.log(response);
+            $("#")
+        })
+    })
+</script>
+  </body>
+</html>
